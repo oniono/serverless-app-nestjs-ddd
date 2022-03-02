@@ -17,6 +17,7 @@ phases:
       - npm install
       - npm run build
       - cd ..
+      - npm install
   build:
     commands:
       - npm run cdk synth
