@@ -22,12 +22,13 @@ phases:
     commands:
       - npm run cdk synth
       - ls
+      - cp ./cdk.out/AwesomeServerlessApiStack.template.json ./sample-transformed.yaml
       - aws s3 cp ./cdk.out/AwesomeServerlessApiStack.template.json s3://$SAM_BUCKET
       - |-
         echo "{ \"Parameters\" : { \"MasterSecretArn\" : \"$SECRET_ARN_DEV\", \"MasterSecretsManagerKey\" : \"$SECRET_MANAGER_KEY\", \"Stage\" : \"dev\" } }" > sample-configuration-dev.json
         echo "{ \"Parameters\" : { \"MasterSecretArn\" : \"$SECRET_ARN_PROD\", \"MasterSecretsManagerKey\" : \"$SECRET_MANAGER_KEY\", \"Stage\" : \"prod\" } }" > sample-configuration-prod.json
 artifacts:
   files:
-    - ./cdk.out/AwesomeServerlessApiStack.template.json
+    - sample-transformed.yaml
     - sample-configuration-dev.json
     - sample-configuration-prod.json
