@@ -13,7 +13,6 @@ phases:
       - npm install -g aws-cdk
       - npm install -g typescript
       - cdk --version
-      - cdk bootstrap
   build:
     commands:
       - npm install
