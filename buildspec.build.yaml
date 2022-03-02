@@ -16,7 +16,8 @@ phases:
   build:
     commands:
       - npm install
-      - 'npm run cdk synth -o -v --all --requier-approval=never'
+      - 'npm run cdk synth -o -v --all --require-approval=never'
+      - ls
       - aws s3 cp AwesomeServerlessApiStack.template.json s3://$SAM_BUCKET
       - |-
         echo "{ \"Parameters\" : { \"MasterSecretArn\" : \"$SECRET_ARN_DEV\", \"MasterSecretsManagerKey\" : \"$SECRET_MANAGER_KEY\", \"Stage\" : \"dev\" } }" > sample-configuration-dev.json
