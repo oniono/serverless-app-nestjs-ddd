@@ -16,7 +16,7 @@ phases:
   build:
     commands:
       - npm install
-      - 'npm run cdk synth -o -v --all --require-approval=never'
+      - 'npm run cdk synth --json'
       - ls
       - aws s3 cp ./cdk.out/AwesomeServerlessApiStack.template.json s3://$SAM_BUCKET
       - |-
