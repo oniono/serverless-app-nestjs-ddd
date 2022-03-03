@@ -4,4 +4,9 @@ import * as cdk from '@aws-cdk/core';
 import { AwesomeServerlessApiStack } from '../lib/awesome-serverless-api-stack';
 
 const app = new cdk.App();
-new AwesomeServerlessApiStack(app, 'AwesomeServerlessApiStack');
+new AwesomeServerlessApiStack(app, 'AwesomeServerlessApiStack',
+    {
+        env: {
+            account: process.env.AWS_TARGET_ACCOUNT_ID
+        }
+    });
