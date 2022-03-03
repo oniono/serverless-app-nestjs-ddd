@@ -18,10 +18,12 @@ phases:
       - npm run build
       - npm prune --production
       - cd ..
+      - git clone https://github.com/aws-samples/cdk-assume-role-credential-plugin.git
+      - npm install -g git+https://github.com/aws-samples/cdk-assume-role-credential-plugin.git
       - npm install
   build:
     commands:
-      - npm run cdk deploy
+      - cdk deploy --app "npx ts-node bin/awesome-serverless-api.ts --plugin cdk-assume-role-credential-plugin"
       #- ls
       # - cp ./cdk.out/AwesomeServerlessApiStack.template.json ./sample-transformed.yaml
       #- aws s3 cp ./cdk.out/AwesomeServerlessApiStack.template.json s3://$SAM_BUCKET
