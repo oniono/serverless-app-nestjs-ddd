@@ -7,14 +7,14 @@ phases:
   install:
     runtime-versions:
       nodejs: 14
-    commands:
-      - echo $AWS_TARGET_ACCOUNT_ID
-      - ASSUME_ROLE_ARN="arn:aws:iam::$AWS_TARGET_ACCOUNT_ID:role/ChildAccountRole"
-      - TEMP_ROLE=$(aws sts assume-role --role-arn $ASSUME_ROLE_ARN --role-session-name serverlessCodeBuild)
-      - export TEMP_ROLE
-      - export AWS_ACCESS_KEY_ID=$(echo "${TEMP_ROLE}" | jq -r '.Credentials.AccessKeyId')
-      - export AWS_SECRET_ACCESS_KEY=$(echo "${TEMP_ROLE}" | jq -r '.Credentials.SecretAccessKey')
-      - export AWS_SESSION_TOKEN=$(echo "${TEMP_ROLE}" | jq -r '.Credentials.SessionToken')      
+    # commands:
+    #   - echo $AWS_TARGET_ACCOUNT_ID
+    #   - ASSUME_ROLE_ARN="arn:aws:iam::$AWS_TARGET_ACCOUNT_ID:role/ChildAccountRole"
+    #   - TEMP_ROLE=$(aws sts assume-role --role-arn $ASSUME_ROLE_ARN --role-session-name serverlessCodeBuild)
+    #   - export TEMP_ROLE
+    #   - export AWS_ACCESS_KEY_ID=$(echo "${TEMP_ROLE}" | jq -r '.Credentials.AccessKeyId')
+    #   - export AWS_SECRET_ACCESS_KEY=$(echo "${TEMP_ROLE}" | jq -r '.Credentials.SecretAccessKey')
+    #   - export AWS_SESSION_TOKEN=$(echo "${TEMP_ROLE}" | jq -r '.Credentials.SessionToken')      
   pre_build:
     commands:
       - echo "Install dependencies"
@@ -26,12 +26,10 @@ phases:
       - npm run build
       - npm prune --production
       - cd ..
-      - git clone https://github.com/aws-samples/cdk-assume-role-credential-plugin.git
-      - npm install -g git+https://github.com/aws-samples/cdk-assume-role-credential-plugin.git
       - npm install
   build:
     commands:
-      - cdk deploy --app "npx ts-node bin/awesome-serverless-api.ts --plugin cdk-assume-role-credential-plugin"
+      - cdk deploy
       #- ls
       # - cp ./cdk.out/AwesomeServerlessApiStack.template.json ./sample-transformed.yaml
       #- aws s3 cp ./cdk.out/AwesomeServerlessApiStack.template.json s3://$SAM_BUCKET
