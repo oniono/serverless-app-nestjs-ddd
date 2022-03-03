@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/cdk.out/asset.26ce09827afff6cda3aa805175f8a55c70ca142669221e1d45af1f1cc19b9993/@angular-devkit/core/src/workspace/json/test/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/cdk.out/asset.26ce09827afff6cda3aa805175f8a55c70ca142669221e1d45af1f1cc19b9993/@angular-devkit/core/src/workspace/json/test/tmp" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
