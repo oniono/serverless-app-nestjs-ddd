@@ -69,7 +69,7 @@ export class Cognito extends Construct {
     });
 
     // configure cognito hosted OAuth 2.0 server
-    const userPoolDomain = new UserPoolDomain(this, 'UserPoolDomain', {
+    const userPoolDomain = new UserPoolDomain(this, 'UserPoolDomain' + process.env.BRANCH_NAME, {
       userPool: this.userPool,
       cognitoDomain: {
         domainPrefix: hostedAuthDomainPrefix,
