@@ -1,8 +1,8 @@
 {
-  "name": "awesome-serverless-api",
+  "name": "freq-serverless-api",
   "version": "0.1.0",
   "bin": {
-    "awesome-serverless-api": "bin/awesome-serverless-api.js"
+    "awesome-serverless-api": "bin/freq-serverless-api.js"
   },
   "scripts": {
     "cdk": "cdk"
