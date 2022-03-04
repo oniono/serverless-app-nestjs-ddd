@@ -1,4 +1,4 @@
-import { Construct } from '@aws-cdk/core';
+import { CfnOutput, Construct } from '@aws-cdk/core';
 import {
   UserPool,
   UserPoolClient,
@@ -75,5 +75,7 @@ export class Cognito extends Construct {
         domainPrefix: hostedAuthDomainPrefix,
       },
     });
+
+    new CfnOutput(this, 'CognitoDoamin', { value: hostedAuthDomainPrefix });
   }
 }
