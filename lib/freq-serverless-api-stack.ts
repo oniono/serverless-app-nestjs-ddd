@@ -2,7 +2,7 @@ import * as cdk from '@aws-cdk/core';
 import { Cognito } from './cognito.construct';
 import { ApiConstruct } from './api.construct';
 
-export class AwesomeServerlessApiStack extends cdk.Stack {
+export class FreqServerlessApiStack extends cdk.Stack {
   // Apply default config here
   config = { hostedAuthDomainPrefix: 'my-auth-1591780305' };
 
