@@ -29,7 +29,6 @@ phases:
       - npm install
   build:
     commands:
-      - cdk bootstrap aws://$AWS_TARGET_ACCOUNT_ID/$AWS_DEFAULT_REGION
       - cdk deploy --require-approval never
       #- ls
       # - cp ./cdk.out/AwesomeServerlessApiStack.template.json ./sample-transformed.yaml
