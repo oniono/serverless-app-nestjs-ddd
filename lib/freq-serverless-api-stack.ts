@@ -4,7 +4,7 @@ import { ApiConstruct } from './api.construct';
 
 export class FreqServerlessApiStack extends cdk.Stack {
   // Apply default config here
-  config = { hostedAuthDomainPrefix: 'my-auth-1591780305' };
+  config = { hostedAuthDomainPrefix: 'my-auth-' + process.env.BRANCH_NAME };
 
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
