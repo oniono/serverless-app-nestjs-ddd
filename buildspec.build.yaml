@@ -26,6 +26,8 @@ phases:
       - npm run build
       - npm prune --production
       - cd ..
+      - git clone https://github.com/aws-samples/cdk-assume-role-credential-plugin.git
+      - npm install -g git+https://github.com/aws-samples/cdk-assume-role-credential-plugin.git
       - npm install
   build:
     commands:
