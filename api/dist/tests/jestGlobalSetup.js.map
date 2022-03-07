@@ -1,0 +1,1 @@
+{"version":3,"file":"jestGlobalSetup.js","sourceRoot":"","sources":["../../tests/jestGlobalSetup.ts"],"names":[],"mappings":";;AAAA,iCAAiC;AACjC,6BAA6B;AAG7B,MAAM,OAAO,GAAW,IAAI,CAAC,OAAO,CAAC,SAAS,EAAE,cAAc,CAAC,CAAC;AAChE,MAAM,CAAC,OAAO,GAAG,KAAK,IAAmB,EAAE;IACzC,MAAM,CAAC,MAAM,CAAC,EAAE,IAAI,EAAE,OAAO,EAAE,CAAC,CAAC;AACnC,CAAC,CAAC"}

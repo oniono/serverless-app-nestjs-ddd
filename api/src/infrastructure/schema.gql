@@ -1,0 +1,35 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type IdResponse {
+  id: String!
+}
+
+type UserResponse {
+  email: String!
+  city: String!
+  postalCode: String!
+  street: String!
+}
+
+type Query {
+  findUsers(input: FindUsersRequest!): [UserResponse!]!
+}
+
+input FindUsersRequest {
+  city: String
+  postalCode: String
+  street: String
+}
+
+type Mutation {
+  create(input: CreateStickerRequest!): IdResponse!
+}
+
+input CreateStickerRequest {
+  freqDashboardId: String!
+  userId: String!
+  missionStickerCount: Float!
+  normalStickerCount: Float!
+}
