@@ -23,7 +23,7 @@ The `cdk.json` file tells the CDK Toolkit how to execute your app.
 - /src/api/.env 파일에서 MySQL의 접속 정보를 설정한 후 /src/api 위치에서 db 생성을 위한 migration 실행
 
 ```
-npm run migration:generate -- -n CreateMysqlData;                          
+npm run migration:generate -- -n CreateMysqlData                          
 npm run migration:run
 npm run start
 ```
