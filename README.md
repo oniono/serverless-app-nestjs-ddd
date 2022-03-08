@@ -41,9 +41,11 @@ npm run start
 ### API Spec은 Swagger Document 참고
 http://localhost:3000/docs
 
-# Architecture
+# 참고 소스
 
-Mainly based on:
+This sample app is mainly based on:
+
+https://github.com/Sairyss/domain-driven-hexagon
 
 - [Domain-Driven Design (DDD)](https://en.wikipedia.org/wiki/Domain-driven_design)
 - [Hexagonal (Ports and Adapters) Architecture](https://blog.octo.com/en/hexagonal-architecture-three-principles-and-an-implementation-example/)
