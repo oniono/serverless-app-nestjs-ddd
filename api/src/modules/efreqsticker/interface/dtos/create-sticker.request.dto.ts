@@ -1,6 +1,5 @@
 import { CreateSticker } from '@src/interface-adapters/interfaces/sticker/create.sticker.interface';
 import { ApiProperty } from '@nestjs/swagger';
-import { ArgsType, Field, InputType } from '@nestjs/graphql';
 import {
   IsNotEmpty,
   IsNumber,

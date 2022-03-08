@@ -2,9 +2,7 @@ import { UserEntity } from '@src/modules/efrequser/domain/entities/user.entity';
 import { ResponseBase } from '@libs/ddd/interface-adapters/base-classes/response.base';
 import { User } from '@src/interface-adapters/interfaces/user/user.interface';
 import { ApiProperty } from '@nestjs/swagger';
-import { Field, ObjectType } from '@nestjs/graphql';
 
-@ObjectType() // only if you are using graphql
 export class UserResponse extends ResponseBase implements User {
   constructor(user: UserEntity) {
     super(user);
@@ -26,28 +24,24 @@ export class UserResponse extends ResponseBase implements User {
     example: 'coffee@sp.com',
     description: "User's email address",
   })
-  @Field() // <- only if you are using GraphQL
   email: string;
 
   @ApiProperty({
     example: 'Seoul',
     description: "User's city of residence",
   })
-  @Field() // <- only if you are using GraphQL
   city: string;
 
   @ApiProperty({
     example: '123456',
     description: 'Postal code',
   })
-  @Field() // <- only if you are using GraphQL
   postalCode: string;
 
   @ApiProperty({
     example: 'Teheran-ro',
     description: 'Street where the user is registered',
   })
-  @Field() // <- only if you are using GraphQL
   street: string;
 }
 

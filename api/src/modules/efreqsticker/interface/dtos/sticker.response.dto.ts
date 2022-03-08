@@ -2,10 +2,8 @@ import { StickerEntity } from '@src/modules/efreqsticker/domain/entities/sticker
 import { ResponseBase } from '@libs/ddd/interface-adapters/base-classes/response.base';
 import { Sticker } from '@src/interface-adapters/interfaces/sticker/sticker.interface';
 import { ApiProperty } from '@nestjs/swagger';
-import { Field, ObjectType } from '@nestjs/graphql';
 import { UUID } from '@src/libs/ddd/domain/value-objects/uuid.value-object';
 
-@ObjectType() // only if you are using graphql
 export class StickerResponse extends ResponseBase implements Sticker {
   constructor(sticker: StickerEntity) {
     super(sticker);
@@ -26,21 +24,18 @@ export class StickerResponse extends ResponseBase implements Sticker {
     example: 'joh-doe@gmail.com',
     description: "Sticker's email address",
   })
-  @Field() // <- only if you are using GraphQL
   freqDashboardId: string;
 
   @ApiProperty({
     example: '1',
     description: "미션 음료 스티커 개수",
   })
-  @Field() // <- only if you are using GraphQL
   missionStickerCount: number;
 
   @ApiProperty({
     example: '1',
     description: '일반 음료 스티커 개수',
   })
-  @Field() // <- only if you are using GraphQL
   normalStickerCount: number;
 }
 

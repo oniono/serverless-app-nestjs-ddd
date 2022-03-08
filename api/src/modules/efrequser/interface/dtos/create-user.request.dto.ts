@@ -1,6 +1,5 @@
 import { CreateUser } from '@src/interface-adapters/interfaces/user/create.user.interface';
 import { ApiProperty } from '@nestjs/swagger';
-import { ArgsType, Field, InputType } from '@nestjs/graphql';
 import {
   IsAlphanumeric,
   IsEmail,
