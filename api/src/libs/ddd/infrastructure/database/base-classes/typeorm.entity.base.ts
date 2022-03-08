@@ -11,13 +11,15 @@ export abstract class TypeormEntityBase {
   id: string;
 
   @CreateDateColumn({
-    type: 'timestamptz',
+    // type: 'timestamptz', for Postgres
+    type: 'timestamp', // for mysql
     update: false,
   })
   createdAt: Date;
 
   @UpdateDateColumn({
-    type: 'timestamptz',
+    // type: 'timestamptz', for Postgres
+    type: 'timestamp', // for mysql
   })
   updatedAt: Date;
 }

@@ -15,7 +15,7 @@ export const userSeeds: NonFunctionProperties<UserOrmEntity>[] = [
     city: 'Seoul',
     postalCode: '23321',
     street: 'Jongro',
-    role: UserRoles.guest,
+    role: UserRoles.user,
   },
   {
     ...createdAtUpdatedAtMock,
@@ -24,6 +24,6 @@ export const userSeeds: NonFunctionProperties<UserOrmEntity>[] = [
     city: 'Seoul',
     postalCode: '28034',
     street: 'Garosu-gil',
-    role: UserRoles.guest,
+    role: UserRoles.user,
   },
 ];

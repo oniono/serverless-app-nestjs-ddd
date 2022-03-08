@@ -22,7 +22,7 @@ export class UserEntity extends AggregateRoot<UserProps> {
   static create(create: CreateUserProps): UserEntity {
     const id = UUID.generate();
     /* Setting a default role since we are not accepting it during creation. */
-    const props: UserProps = { ...create, role: UserRoles.guest };
+    const props: UserProps = { ...create, role: UserRoles.user };
     const user = new UserEntity({ id, props });
     /* adding "UserCreated" Domain Event that will be published
     eventually so an event handler somewhere may receive it and do an
@@ -50,7 +50,7 @@ export class UserEntity extends AggregateRoot<UserProps> {
   }
 
   makeModerator(): void {
-    this.props.role = UserRoles.moderator;
+    this.props.role = UserRoles.operator;
   }
 
   /* Update method only changes properties that we allow, in this

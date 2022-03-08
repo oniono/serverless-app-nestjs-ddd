@@ -3742,7 +3742,7 @@
         "affectsGlobalScope": false
       },
       "../src/infrastructure/configs/ormconfig.ts": {
-        "version": "5909f5e8afc4e20dfd2dc844d3efe7b54e685112dfb5b5bddb52587333a9550d",
+        "version": "41ae6e225e8ad1c9838d6a4009c58fa4c86e2a05d2ee174d80dd72e0e446d04e",
         "signature": "5d86921e9694979be25ad8bad5157ec741f0df155f2077952b2d147feabdb2ee",
         "affectsGlobalScope": false
       },
@@ -3772,17 +3772,17 @@
         "affectsGlobalScope": false
       },
       "../src/libs/ddd/infrastructure/database/base-classes/typeorm.entity.base.ts": {
-        "version": "f6660c4f22a620b135d00e73136b5cf260d65b8bf7ed9d0c0cc13ebd8243b57b",
+        "version": "bf3d2d11a27b9c9b9afdcac1ea5aef104da10b040c5834ae841e701d8336765e",
         "signature": "d2226e9f2747330a675cd2cb5c99521f084258a82ba7f4dc98c5c874fef61ded",
         "affectsGlobalScope": false
       },
       "../src/modules/efrequser/domain/entities/user.types.ts": {
-        "version": "fde6837301582f06b528bcdfe2a6b09243ee168210199552241b16dcbb1c795c",
-        "signature": "1c03176ed0f8c73f789bcb3a5b6ddfcc6c5f2499ff9ade6af9b9973ca16c1376",
+        "version": "a1ba3be848d858f91045ef8b4a2918489a0692e5565c6e3f9fe63676e8e200fc",
+        "signature": "2637a788d71a584e128e234931a8fabd0d65ef4842cea98d876a83e7f80f265e",
         "affectsGlobalScope": false
       },
       "../src/modules/efrequser/infrastructure/database/user.orm-entity.ts": {
-        "version": "c6428b70963434cf9e0e8801cf7f3e85d75e465f0b7c60d8815bb25332233adf",
+        "version": "45b98a51f2f974307883eab569097317ab43f335fb3765bbb5409d488df068cd",
         "signature": "a58e0b6676590d2f4fec5a332ab6f73f070e74f7b6a5a581fd6fc8496a6cdeb3",
         "affectsGlobalScope": false
       },
@@ -3917,7 +3917,7 @@
         "affectsGlobalScope": false
       },
       "../src/modules/efrequser/domain/entities/user.entity.ts": {
-        "version": "fef0e532a1d4cd8a1cd2468f4a557dd80d1260b09d0f21865d8d43c6ffb50dff",
+        "version": "984a368aa9f0f0ff73b6b93007d001136999a86040baac3f7c56724056bb2795",
         "signature": "5b0a75944f6f8c2a965dd0ec1d91038a58ff0495a87f3c36e501fab981408409",
         "affectsGlobalScope": false
       },
@@ -8581,9 +8581,9 @@
         "signature": "7959ec7fa3ea5a44eda985a4786d1ee5e51a44c4ed2d0610f78af3e0c65061f0",
         "affectsGlobalScope": false
       },
-      "../src/infrastructure/database/migrations/1646708570790-createefreqdb.ts": {
-        "version": "3f9eb5c3936391031e147dea0e4aa791e076cb386b03f40cd0451474a4352dfb",
-        "signature": "2616281ae16b6e8de8fa1d0b1e44c046da3b398f7113c83c562e2618f413b58f",
+      "../src/infrastructure/database/migrations/1646719296723-createmysql.ts": {
+        "version": "63ba7db7ddd472ff798d5c3301e2a61617f4e069e3106cbc38dddf8b16ecfc71",
+        "signature": "02cc79aa345db1a3a70db8d372194348524ca025a6b3d2f48f7636b3fc49921d",
         "affectsGlobalScope": false
       },
       "../src/interface-adapters/interfaces/barcode/find-barcode.interface.ts": {
@@ -8692,7 +8692,7 @@
         "affectsGlobalScope": false
       },
       "../src/modules/efrequser/infrastructure/database/seeding/user.seeds.ts": {
-        "version": "4e8b2f4b1b15cbd79ad2f57aedd56b2e29e72d0c75bfaa8a9223d5478acbf377",
+        "version": "f47303b5c7c399865f2e9586830edc0b0e6bb1ef44d455b93d955b93c9e718f2",
         "signature": "9af576024c398d2f7af015abb5f3fe12dce6f9697b66254020191a2d0a8a86b9",
         "affectsGlobalScope": false
       },
@@ -15951,7 +15951,7 @@
         "../node_modules/dotenv/types/index.d.ts",
         "../node_modules/env-var/env-var.d.ts"
       ],
-      "../src/infrastructure/database/migrations/1646708570790-createefreqdb.ts": [
+      "../src/infrastructure/database/migrations/1646719296723-createmysql.ts": [
         "../node_modules/typeorm/index.d.ts"
       ],
       "../src/infrastructure/database/unit-of-work/unit-of-work.module.ts": [
@@ -23338,7 +23338,7 @@
       "../src/infrastructure/configs/ormconfig.ts": [
         "../node_modules/@nestjs/typeorm/index.d.ts"
       ],
-      "../src/infrastructure/database/migrations/1646708570790-createefreqdb.ts": [
+      "../src/infrastructure/database/migrations/1646719296723-createmysql.ts": [
         "../node_modules/typeorm/index.d.ts"
       ],
       "../src/infrastructure/database/unit-of-work/unit-of-work.ts": [

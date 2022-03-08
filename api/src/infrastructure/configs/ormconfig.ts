@@ -8,7 +8,8 @@ import { get } from 'env-var';
 config();
 
 export const typeormConfig: TypeOrmModuleOptions = {
-  type: 'postgres',
+  //type: 'postgres',
+  type: 'mysql',
   host: get('DB_HOST')
     .required()
     .asString(),
@@ -26,6 +27,6 @@ export const typeormConfig: TypeOrmModuleOptions = {
     .asString(),
   entities: [],
   autoLoadEntities: true,
-  connectTimeoutMS: 2000,
+  //connectTimeoutMS: 2000,
   logging: ['error', 'migration', 'schema'],
 };

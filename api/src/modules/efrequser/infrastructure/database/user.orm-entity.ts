@@ -20,6 +20,10 @@ export class UserOrmEntity extends TypeormEntityBase {
   @Column()
   street: string;
 
-  @Column({ enum: UserRoles })
-  role: UserRoles;
+  @Column({
+    type: "enum",
+    enum: UserRoles,
+    default: UserRoles.user
+})
+  role!: UserRoles;
 }
