@@ -1,6 +1,6 @@
 # Welcome to Sample App using DDD, Serverless, NestJS, MySQL
 
-이 프로젝트는 한 개발팀이 고민하고 있는 스택을 최대한 유사하게 구축한 상태에서 Event Driven App, Severless Application의 권고안을 만들어 내기 위해서 작성된 앱이다. 
+이 프로젝트는 한 개발팀이 고민하고 있는 스택을 최대한 유사하게 구축한 상태에서 Severless Application의 권고안을 만들어 내기 위해서 작성된 앱이다. 
 
 ## Stack
 - IaC : AWS CDK
