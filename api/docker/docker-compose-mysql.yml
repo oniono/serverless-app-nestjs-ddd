@@ -1,0 +1,33 @@
+version: "3.7"
+
+services:
+  mysql: # Example Service
+    container_name: myapp_mysql
+    restart: always
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_USER=myapp
+      - MYSQL_PASSWORD=myapp
+      - MYSQL_DATABASE=myapp_docker
+    ports:
+    - "3308:3306"
+    volumes:
+    - myapp_mysql_data:/var/lib/mysql
+  redis: # Example Service
+    container_name: myapp_redis
+    restart: always
+    image: redis:6.0-alpine
+    expose:
+      - "6379"
+    volumes:
+      - myapp_redis_data:/data
+
+volumes:
+  myapp_mysql_data:
+  myapp_redis_data:
+
+networks:
+  default:
+    external:
+      name: myapp
