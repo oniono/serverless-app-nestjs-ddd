@@ -8581,19 +8581,9 @@
         "signature": "7959ec7fa3ea5a44eda985a4786d1ee5e51a44c4ed2d0610f78af3e0c65061f0",
         "affectsGlobalScope": false
       },
-      "../src/infrastructure/database/migrations/1646589105040-createbarcode.ts": {
-        "version": "4b8e9c78a334a84765145bb73f14443b72ee1a18adb9c84a8af8d02d1cfe0a88",
-        "signature": "e713cfbb2eb4bc38c394553cedeee5fc34f1f2a196be00796b2f72352e7a63f4",
-        "affectsGlobalScope": false
-      },
-      "../src/infrastructure/database/migrations/1646589656489-createdashboard.ts": {
-        "version": "accab9d9c33c7c0f66317c59267cb41a620c405a19e2d83bd8c4e0b599d82f59",
-        "signature": "96f8a7dcbcd53ef8baacd1e3652cb81a0c5420361a8210431b2b0c4f4c778a02",
-        "affectsGlobalScope": false
-      },
-      "../src/infrastructure/database/migrations/1646597832101-createsticker.ts": {
-        "version": "e8d0985c3dad3c70f322acc7476907ce9c138e880f5338fe22f9ffc4e72c23b0",
-        "signature": "be606e6aa990f4bd508eac4a69281a7e1148bceae97c2df5fb8a1670c8bc71fb",
+      "../src/infrastructure/database/migrations/1646708570790-createefreqdb.ts": {
+        "version": "3f9eb5c3936391031e147dea0e4aa791e076cb386b03f40cd0451474a4352dfb",
+        "signature": "2616281ae16b6e8de8fa1d0b1e44c046da3b398f7113c83c562e2618f413b58f",
         "affectsGlobalScope": false
       },
       "../src/interface-adapters/interfaces/barcode/find-barcode.interface.ts": {
@@ -15961,13 +15951,7 @@
         "../node_modules/dotenv/types/index.d.ts",
         "../node_modules/env-var/env-var.d.ts"
       ],
-      "../src/infrastructure/database/migrations/1646589105040-createbarcode.ts": [
-        "../node_modules/typeorm/index.d.ts"
-      ],
-      "../src/infrastructure/database/migrations/1646589656489-createdashboard.ts": [
-        "../node_modules/typeorm/index.d.ts"
-      ],
-      "../src/infrastructure/database/migrations/1646597832101-createsticker.ts": [
+      "../src/infrastructure/database/migrations/1646708570790-createefreqdb.ts": [
         "../node_modules/typeorm/index.d.ts"
       ],
       "../src/infrastructure/database/unit-of-work/unit-of-work.module.ts": [
@@ -23354,13 +23338,7 @@
       "../src/infrastructure/configs/ormconfig.ts": [
         "../node_modules/@nestjs/typeorm/index.d.ts"
       ],
-      "../src/infrastructure/database/migrations/1646589105040-createbarcode.ts": [
-        "../node_modules/typeorm/index.d.ts"
-      ],
-      "../src/infrastructure/database/migrations/1646589656489-createdashboard.ts": [
-        "../node_modules/typeorm/index.d.ts"
-      ],
-      "../src/infrastructure/database/migrations/1646597832101-createsticker.ts": [
+      "../src/infrastructure/database/migrations/1646708570790-createefreqdb.ts": [
         "../node_modules/typeorm/index.d.ts"
       ],
       "../src/infrastructure/database/unit-of-work/unit-of-work.ts": [
