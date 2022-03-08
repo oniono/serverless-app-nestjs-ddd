@@ -19,6 +19,10 @@ The `cdk.json` file tells the CDK Toolkit how to execute your app.
  template
 
 ## Build instruction for Sample App
+이 앱은 Serverless App이 NoSQL과 SQL를 각각 Data Store로 사용할 때의 퍼포먼스를 비교하기 위해 준비된 App이다.
+Application이 DDB, RDS를 각각 사용할 경우를 테스트할 예정이다.
+로컬에서는 아래 내용을 참고하여 SQL 서버를 연결할 수 있다.
+
 ### 로컬 개발 환경에 MySQL을 사용하는 경우
 - /src/api/docker/docker-compose-mysql.yml을 사용하여 로컬 데이터 베이스 셋업
 
@@ -70,7 +74,7 @@ Before we begin, here are the PROS and CONS of using a complete architecture lik
 
 # Diagram
 
-![Domain-Driven Hexagon](assets/images/DomainDrivenHexagon.png)
+![Domain-Driven Hexagon](api/assets/images/DomainDrivenHexagon.png)
 <sup>Diagram is mostly based on [this one](https://github.com/hgraca/explicit-architecture-php#explicit-architecture-1) + others found online</sup>
 
 In short, data flow looks like this (from left to right):
